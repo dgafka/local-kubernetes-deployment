@@ -6,4 +6,4 @@ echo "Pushing the image to local Registry. So it's available for local Kubernete
 docker push localhost:5000/local/demo;
 
 echo "Deploying to Kubernetes cluster using Helm Chart";
-helm install demo-chart buildachart/ --values buildachart/values.yaml;
+helm install demo-chart demo/ --values demo/values.yaml;
